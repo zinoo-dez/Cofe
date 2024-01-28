@@ -90,6 +90,73 @@ nav {
   display: none;
   color: #2c1818;
 }
+/* navbar end */
+/* banner start */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #000; */
+  min-height: calc(100vh - 100px);
+}
+.banner-card {
+  backdrop-filter: blur(4px);
+  /* background: pink; */
+  text-align: center;
+  padding: 30px;
+}
+.banner-card h1 {
+  font-size: 5rem;
+  color: #eade99;
+  text-shadow: 0 0 4px #f9c84c;
+  margin: 20px 0;
+}
+.banner-card h3 {
+  font-size: 2rem;
+  font-style: italic;
+}
+.banner-card p {
+  margin-bottom: 20px;
+}
+.banner-card button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #6b440a3f;
+  color: #ebdbdb;
+  box-shadow: inset 0 0 4px 1px #ffa6004e;
+  cursor: pointer;
+}
+/* header end */
+/* section start */
+section {
+  width: 100%;
+  min-height: 80vh;
+  border-bottom: 1px solid grey;
+  padding: 30px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  border-bottom: 2px solid #eade99;
+  width: fit-content;
+  margin: auto;
+}
+#about {
+  background-image: url("../img/about.jpg");
+}
+#menu {
+  background-image: url("../img/people-2588594_1280.jpg");
+}
+#service {
+  background-image: url("../img/tee-1740871_640.jpg");
+}
+#contact {
+  background-image: url("../img/cup-of-coffee-1280537_1280.jpg");
+}
 /**************************************************media-query**********************************************************************************************************************/
 
 @media (max-width: 630px) {
@@ -114,6 +181,7 @@ nav {
     transform: translateX(140%);
     transition: 1s;
     opacity: 0;
+    z-index: 100000;
     /* display: none; */
   }
   .show {
