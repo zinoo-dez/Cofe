@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    color: rgb(235, 219, 219);
+  }
+  body {
+    background: grey;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    color: rgb(19, 190, 39);
+    font-size: 3rem;
+  }
+  body {
+    background: rgb(238, 180, 180);
+  }
+}
+@media (min-width: 1002px) {
+  h1 {
+    color: rgb(25, 42, 53);
+    font-size: 5rem;
+  }
+  body {
+    background: rgb(78, 103, 156);
+  }
+}
