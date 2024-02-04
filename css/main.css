@@ -118,12 +118,12 @@ nav {
 .banner-card p {
   margin-bottom: 20px;
 }
-.banner-card button {
+.btn {
   padding: 10px 20px;
   border-radius: 20px;
   border: none;
-  background: #6b440a3f;
-  color: #ebdbdb;
+  background: #ecb25bf6;
+  color: #270b0b;
   box-shadow: inset 0 0 4px 1px #ffa6004e;
   cursor: pointer;
 }
@@ -144,6 +144,7 @@ section {
   border-bottom: 2px solid #eade99;
   width: fit-content;
   margin: auto;
+  margin-bottom: 30px;
 }
 #about {
   background-image: url("../img/about.jpg");
@@ -156,6 +157,100 @@ section {
 }
 #contact {
   background-image: url("../img/cup-of-coffee-1280537_1280.jpg");
+}
+
+.about-row {
+  display: flex;
+}
+.about-img,.about-text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text * {
+  color: #000;
+}
+.about-text h3{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.about-text p {
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  background: #f0ecd657;
+  padding: 20px;
+}
+
+.menu-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 20px;
+  padding-bottom: 30px;
+}
+.menu-card {
+  flex: 1;
+  flex-basis: 150px;
+  /* flex: 1 1 10rem; */
+  height: 175px;
+  /* border: 1px solid lightblue; */
+
+}
+.menu-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.menu-card  h5 {
+  text-align: center;
+  text-transform: capitalize;
+  font-style: italic;
+  margin-top: 10px;
+  color: #d7b915;
+}
+
+/* service */
+.service-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.service-card {
+  flex: 1 1 17rem;
+  height: 180px;
+  border: 1px solid #fdf8f8;
+  position: relative;
+  overflow: hidden;
+}
+.service-img,.service-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.service-info {
+  background: #8f672bde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(-100%);
+  /* transform: scale(0);
+  transform-origin: top right; */
+  transition: 0.6s;
+}
+.service-card:hover img{
+  /* transform: scale(1); */
+  transform: translate(0);
+}
+.service-card:hover .service-info{
+  opacity: 0.4;
 }
 /**************************************************media-query**********************************************************************************************************************/
 
@@ -197,4 +292,13 @@ section {
   #bars {
     display: block;
   }
+  .about-row{
+    flex-direction: column;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .menu-card {
+    flex: 1 1 12rem;
+  height: 200px;}
 }
